@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/css/mainStyle.css">
+    <title>Title</title>
+</head>
+<body>
+<!--music box-->
+<div class="music-box-wrapper">
+    <!--    header-->
+    <div class="dots row__flex__container">
+        <div class="l-dot"></div>
+        <div class="r-dot"></div>
+    </div>
+    <!--    body-->
+    <div class="wrapper-body column__flex__container">
+        <div class="small-circle row__flex__container">
+            <div class="circle circle__small__bounds flex-center flex-container">
+                <div class="inside-circle inside-circle__small-bounds flex-center flex-container">
+                    <div class="double-inside-circle inside-circle__small-bounds"></div>
+                </div>
+            </div>
+        </div>
+        <div class="big-circle flex-container">
+            <div class="circle circle__big__bounds flex-center flex-container">
+                <div class="inside-circle inside-circle__big-bounds flex-center flex-container">
+                    <div class="double-inside-circle inside-circle__small-bounds"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    footer-->
+    <div class="dots row__flex__container">
+        <div class="l-dot"></div>
+        <div class="r-dot"></div>
+    </div>
+</div>
+<!--input for wire in music box-->
+<div class="input-wire-wrapper"></div>
+<!--wire-->
+<div class="wire-wrapper-1"></div>
+<div class="wire-wrapper-2"></div>
+
+<!--music distributor-->
+<div class="music-distributor-wrapper row__flex__container">
+    <div class="display flex-container flex-center">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+             width="100" height="100"
+             viewBox="0 0 172 172"
+             style=" fill:#2d2d42;"
+             id="music-note">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+               font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#2d2d42">
+                    <path d="M142.64423,1.13702l-73.49279,22.48197c-8.91526,
+                    2.53245 -16.125,11.80949 -16.125,20.72476v76.46454c0,0
+                     0,1.03365 0,1.05949c0,0 -5.32331,-3.59195
+                     -17.18449,-1.91226c-17.41707,2.48077 -31.55228,
+                     15.84074 -31.55228,29.8726c0,14.03185
+                      14.13521,22.61117 31.55228,20.1304c17.44291,
+                      -2.45492 30.20853,-15.40144 30.20853,
+                      -29.43329c0,0 0,-59.97777 0,-66.20553c0,
+                      -6.20192 7.46815,-8.88942 7.46815,-8.88942l64.99099
+                      -20.36298c0,0 7.1839,-2.40324 7.1839,4.23798c0,6.66707
+                       0,53.12981 0,53.12981c0,0 0,0.02584 0,0.05169c0,0
+                        -6.61538,-3.82452 -18.47656,-2.3774c-17.41707,2.11899
+                        -31.55228,15.19471 -31.55228,29.22656c0,14.03185
+                        14.13521,22.89544 31.55228,20.77644c17.41706,
+                        -2.09315 31.55228,-15.19471 31.55228,-29.22656v-108.2494c0,
+                        -8.88942 -7.23558,-14.05769 -16.125,-11.4994z"></path>
+                </g>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+             width="500" height="500"
+             viewBox="0 0 172 172"
+             style=" fill:#f3dc76;"
+             id="polygon">
+            <g transform="translate(7.31,7.31) scale(0.915,0.915)">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt"
+                   stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                   font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                   style="mix-blend-mode: normal">
+                    <g fill="#f3dc76" stroke="#f3dc76" stroke-width="16" stroke-linejoin="round">
+                        <path d="M37.72578,18.2638h0.0112l113.55807,62.45078c2.12508,0.89644 3.5061,2.979 3.50495,5.28542c-0.00259,2.24084 -1.31045,4.2748 -3.34817,5.20703l-113.71485,62.52917l-0.0112,-0.0112c-0.96969,0.69575 -2.13232,1.07155 -3.32578,1.075c-3.16643,0 -5.73333,-2.5669 -5.73333,-5.73333c-0.00001,-0.00746 -0.00001,-0.01493 0,-0.02239v-126.08854c-0.00001,-0.00747 -0.00001,-0.01493 0,-0.0224c0,-3.16643 2.5669,-5.73333 5.73333,-5.73333c1.19224,0.00018 2.35476,0.37203 3.32578,1.0638z"></path>
+                    </g>
+                    <path d="M0,172v-172h172v172z" fill="none" stroke="none" stroke-width="1"
+                          stroke-linejoin="miter"></path>
+                    <g fill="#f3dc76" stroke="none" stroke-width="1" stroke-linejoin="miter">
+                        <path d="M34.4,17.2c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c-0.00001,0.00747 -0.00001,0.01493 0,0.0224v63.04427v63.04427c-0.00001,0.00746 -0.00001,0.01493 0,0.02239c0,3.16643 2.5669,5.73333 5.73333,5.73333c1.19346,-0.00345 2.3561,-0.37925 3.32578,-1.075l0.0112,0.0112l113.71485,-62.52917c2.03773,-0.93223 3.34559,-2.96619 3.34817,-5.20703c0.00115,-2.30642 -1.37987,-4.38898 -3.50495,-5.28542l-113.55807,-62.45078h-0.0112c-0.97102,-0.69177 -2.13354,-1.06362 -3.32578,-1.0638z"></path>
+                    </g>
+                    <path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path>
+                </g>
+            </g>
+        </svg>
+    </div>
+</div>
+
+<!--main monitor-->
+<div class="main-monitor-wrapper column__flex__container shape-border">
+    <div class="monitor-display flex-container column__flex__container">
+        <div class="display_nav-panel row__flex__container">
+            <div class="nav-panel_circle circle__background_red">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                     width="6" height="6"
+                     viewBox="0 0 172 172"
+                     style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                       stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                       font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                       style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#951f16">
+                            <path d="M40.06055,32.50196l-7.55859,7.55859l45.89746,45.93945l-45.89746,45.89746l7.55859,7.64258l45.93945,-45.93946l45.89746,45.93946l7.64258,-7.64258l-45.93946,-45.89746l45.93946,-45.93945l-7.64258,-7.55859l-45.89746,45.89746z"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="nav-panel_circle circle__background_yellow">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                     width="6" height="6"
+                     viewBox="0 0 172 172"
+                     style=" fill:#000000;">
+                    <g fill="none" fill-rule="none" stroke="none" stroke-width="1" stroke-linecap="butt"
+                       stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                       font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                       style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none" fill-rule="nonzero"></path>
+                        <g fill="#ae8d34" fill-rule="evenodd">
+                            <path d="M14.33333,78.83333v14.33333h143.33333v-14.33333z"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="nav-panel_circle circle__background_green">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                     width="6" height="6"
+                     viewBox="0 0 172 172"
+                     style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                       stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                       font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                       style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#265a16">
+                            <path d="M17.2,17.2v37.84c-0.03509,2.48118 1.2685,4.78904 3.41161,6.03987c2.1431,1.25083 4.79369,1.25083 6.93679,0c2.1431,-1.25083 3.4467,-3.55869 3.41161,-6.03987v-14.35125l32.97563,32.97562c1.72562,1.79734 4.28808,2.52135 6.69912,1.89282c2.41104,-0.62853 4.29391,-2.5114 4.92245,-4.92245c0.62853,-2.41104 -0.09548,-4.9735 -1.89282,-6.69912l-32.97562,-32.97563h14.35125c2.48118,0.03509 4.78904,-1.2685 6.03987,-3.41161c1.25083,-2.1431 1.25083,-4.79369 0,-6.93679c-1.25083,-2.1431 -3.55869,-3.4467 -6.03987,-3.41161zM116.96,17.2c-2.48118,-0.03509 -4.78904,1.2685 -6.03987,3.41161c-1.25083,2.1431 -1.25083,4.79369 0,6.93679c1.25083,2.1431 3.55869,3.4467 6.03987,3.41161h14.35125l-32.97562,32.97563c-1.79734,1.72562 -2.52135,4.28808 -1.89282,6.69912c0.62853,2.41104 2.5114,4.29391 4.92245,4.92245c2.41104,0.62853 4.9735,-0.09548 6.69912,-1.89282l32.97563,-32.97562v14.35125c-0.03509,2.48118 1.2685,4.78904 3.41161,6.03987c2.1431,1.25083 4.79369,1.25083 6.93679,0c2.1431,-1.25083 3.4467,-3.55869 3.41161,-6.03987v-37.84zM68.66563,96.25281c-1.78741,0.05326 -3.48388,0.80028 -4.73,2.08281l-32.97563,32.97562v-14.35125c0.02542,-1.85848 -0.7021,-3.6482 -2.01701,-4.96184c-1.3149,-1.31364 -3.10532,-2.03944 -4.96378,-2.01223c-3.79707,0.05565 -6.83116,3.17694 -6.77922,6.97406v37.84h37.84c2.48118,0.03509 4.78904,-1.2685 6.03987,-3.41161c1.25083,-2.1431 1.25083,-4.79369 0,-6.93679c-1.25083,-2.1431 -3.55869,-3.4467 -6.03987,-3.41161h-14.35125l32.97562,-32.97563c2.03483,-1.97794 2.64666,-5.00221 1.54067,-7.61556c-1.10599,-2.61334 -3.7029,-4.27965 -6.53941,-4.196zM103.1261,96.25281c-2.79841,0.00347 -5.31595,1.7014 -6.36771,4.29465c-1.05175,2.59324 -0.42817,5.56514 1.57724,7.51691l32.97562,32.97563h-14.35125c-2.48118,-0.03509 -4.78904,1.2685 -6.03987,3.41161c-1.25083,2.1431 -1.25083,4.79369 0,6.93679c1.25083,2.1431 3.55869,3.4467 6.03987,3.41161h37.84v-37.84c0.02542,-1.85848 -0.7021,-3.6482 -2.01701,-4.96184c-1.3149,-1.31364 -3.10532,-2.03944 -4.96378,-2.01223c-3.79707,0.05565 -6.83116,3.17694 -6.77922,6.97406v14.35125l-32.97563,-32.97562c-1.29693,-1.33318 -3.07834,-2.08452 -4.93828,-2.08281z"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <hr class="underline">
+        <div class="display-main row__flex__container">
+            <div class="display-main_left-side"></div>
+            <div class="display-main_rest">
+                <div class="first-line-1"></div>
+                <div class="first-line-2"></div>
+                <div class="first-line-3"></div>
+
+                <div class="second-line-1"></div>
+                <div class="second-line-2"></div>
+
+                <div class="third-line-1"></div>
+
+                <div class="forth-line-1"></div>
+
+                <div class="fifth-line-1"></div>
+                <div class="fifth-line-2"></div>
+                <div class="fifth-line-3"></div>
+
+                <div class="sixth-line-1"></div>
+                <div class="sixth-line-2"></div>
+                <div class="sixth-line-3"></div>
+                <div class="sixth-line-4"></div>
+
+                <div class="seventh-line-1"></div>
+                <div class="seventh-line-2"></div>
+                <div class="seventh-line-3"></div>
+
+                <div class="eighth-line-1"></div>
+                <div class="eighth-line-2"></div>
+                <div class="eighth-line-3"></div>
+
+                <div class="ninth-line-1"></div>
+                <div class="ninth-line-2"></div>
+                <div class="ninth-line-3"></div>
+
+                <div class="tenth-line-1"></div>
+                <div class="tenth-line-2"></div>
+                <div class="tenth-line-3"></div>
+
+                <div class="eleventh-line-1"></div>
+                <div class="eleventh-line-2"></div>
+                <div class="eleventh-line-3"></div>
+                <div class="eleventh-line-4"></div>
+
+                <div class="twelfth-line-1"></div>
+                <div class="twelfth-line-2"></div>
+
+                <div class="thirteenth-line-1"></div>
+                <div class="thirteenth-line-2"></div>
+                <div class="thirteenth-line-3"></div>
+
+                <div class="fourteenth-line-1"></div>
+                <div class="fourteenth-line-2"></div>
+                <div class="fourteenth-line-3"></div>
+                <div class="fourteenth-line-4"></div>
+
+                <div class="fifteenth-line-1"></div>
+                <div class="fifteenth-line-2"></div>
+                <div class="fifteenth-line-3"></div>
+
+                <div class="sixteenth-line-1"></div>
+                <div class="sixteenth-line-2"></div>
+                <div class="sixteenth-line-3"></div>
+                <div class="sixteenth-line-4"></div>
+
+                <div class="seventeenth-line-1"></div>
+                <div class="seventeenth-line-2"></div>
+                <div class="seventeenth-line-3"></div>
+
+                <div class="eighteenth-line-1"></div>
+                <div class="eighteenth-line-2"></div>
+                <div class="eighteenth-line-3"></div>
+
+                <div class="nineteenth-line-1"></div>
+                <div class="nineteenth-line-2"></div>
+
+                <div class="twentieth-line-1"></div>
+                <div class="twentieth-line-2"></div>
+                <div class="twentieth-line-3"></div>
+
+
+                <div class="rest_phone-display">
+                    <div class="display_nav-panel row__flex__container">
+                        <div class="nav-panel_circle circle__background_red">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 width="6" height="6"
+                                 viewBox="0 0 172 172"
+                                 style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                   stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                   stroke-dashoffset="0"
+                                   font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                   style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#951f16">
+                                        <path d="M40.06055,32.50196l-7.55859,7.55859l45.89746,45.93945l-45.89746,45.89746l7.55859,7.64258l45.93945,-45.93946l45.89746,45.93946l7.64258,-7.64258l-45.93946,-45.89746l45.93946,-45.93945l-7.64258,-7.55859l-45.89746,45.89746z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="nav-panel_circle circle__background_yellow">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 width="6" height="6"
+                                 viewBox="0 0 172 172"
+                                 style=" fill:#000000;">
+                                <g fill="none" fill-rule="none" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                   stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                   stroke-dashoffset="0"
+                                   font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                   style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none" fill-rule="nonzero"></path>
+                                    <g fill="#ae8d34" fill-rule="evenodd">
+                                        <path d="M14.33333,78.83333v14.33333h143.33333v-14.33333z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="nav-panel_circle circle__background_green">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 width="6" height="6"
+                                 viewBox="0 0 172 172"
+                                 style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                   stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                   stroke-dashoffset="0"
+                                   font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                   style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#265a16">
+                                        <path d="M17.2,17.2v37.84c-0.03509,2.48118 1.2685,4.78904 3.41161,6.03987c2.1431,1.25083 4.79369,1.25083 6.93679,0c2.1431,-1.25083 3.4467,-3.55869 3.41161,-6.03987v-14.35125l32.97563,32.97562c1.72562,1.79734 4.28808,2.52135 6.69912,1.89282c2.41104,-0.62853 4.29391,-2.5114 4.92245,-4.92245c0.62853,-2.41104 -0.09548,-4.9735 -1.89282,-6.69912l-32.97562,-32.97563h14.35125c2.48118,0.03509 4.78904,-1.2685 6.03987,-3.41161c1.25083,-2.1431 1.25083,-4.79369 0,-6.93679c-1.25083,-2.1431 -3.55869,-3.4467 -6.03987,-3.41161zM116.96,17.2c-2.48118,-0.03509 -4.78904,1.2685 -6.03987,3.41161c-1.25083,2.1431 -1.25083,4.79369 0,6.93679c1.25083,2.1431 3.55869,3.4467 6.03987,3.41161h14.35125l-32.97562,32.97563c-1.79734,1.72562 -2.52135,4.28808 -1.89282,6.69912c0.62853,2.41104 2.5114,4.29391 4.92245,4.92245c2.41104,0.62853 4.9735,-0.09548 6.69912,-1.89282l32.97563,-32.97562v14.35125c-0.03509,2.48118 1.2685,4.78904 3.41161,6.03987c2.1431,1.25083 4.79369,1.25083 6.93679,0c2.1431,-1.25083 3.4467,-3.55869 3.41161,-6.03987v-37.84zM68.66563,96.25281c-1.78741,0.05326 -3.48388,0.80028 -4.73,2.08281l-32.97563,32.97562v-14.35125c0.02542,-1.85848 -0.7021,-3.6482 -2.01701,-4.96184c-1.3149,-1.31364 -3.10532,-2.03944 -4.96378,-2.01223c-3.79707,0.05565 -6.83116,3.17694 -6.77922,6.97406v37.84h37.84c2.48118,0.03509 4.78904,-1.2685 6.03987,-3.41161c1.25083,-2.1431 1.25083,-4.79369 0,-6.93679c-1.25083,-2.1431 -3.55869,-3.4467 -6.03987,-3.41161h-14.35125l32.97562,-32.97563c2.03483,-1.97794 2.64666,-5.00221 1.54067,-7.61556c-1.10599,-2.61334 -3.7029,-4.27965 -6.53941,-4.196zM103.1261,96.25281c-2.79841,0.00347 -5.31595,1.7014 -6.36771,4.29465c-1.05175,2.59324 -0.42817,5.56514 1.57724,7.51691l32.97562,32.97563h-14.35125c-2.48118,-0.03509 -4.78904,1.2685 -6.03987,3.41161c-1.25083,2.1431 -1.25083,4.79369 0,6.93679c1.25083,2.1431 3.55869,3.4467 6.03987,3.41161h37.84v-37.84c0.02542,-1.85848 -0.7021,-3.6482 -2.01701,-4.96184c-1.3149,-1.31364 -3.10532,-2.03944 -4.96378,-2.01223c-3.79707,0.05565 -6.83116,3.17694 -6.77922,6.97406v14.35125l-32.97563,-32.97562c-1.29693,-1.33318 -3.07834,-2.08452 -4.93828,-2.08281z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <hr class="underline">
+                    <div class="display-main-mini">
+                        <span class="span-black">HKJC</span>
+                        <span class="span__dark-trans">.com</span>
+                    </div>
+                    <hr class="underline">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="monitor-button flex-center flex-container">
+        <div class="button-circle"></div>
+    </div>
+</div>
+<div class="computer-stand"></div>
+<div class="under-computer-stand"></div>
+
+<!--input for wire main monitor-->
+<div class="input-wire-wrapper-2"></div>
+
+<!--main monitor and music distributor wrapper-->
+<div class="wire-monitor-distributor-wrapper-1"></div>
+<div class="wire-monitor-distributor-wrapper-2"></div>
+
+<!--big phone display-->
+<div class="phone-display-wrapper flex-container row__flex__container flex-center">
+    <div class="phone-dynamic flex-container flex-center">
+        <div class="phone-dymanic_rectangle"></div>
+    </div>
+    <div class="phone-screen column__flex__container">
+        <div class="nav-panel"></div>
+        <div class="body-panel-wrapper">
+            <div class="body-panel flex-container column__flex__container">
+                <div class="body-panel_first-frame flex-container column__flex__container">
+                    <div class="mini-display"></div>
+                    <div class="mini-text flex-container column__flex__container">
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                        <div class="line-3"></div>
+                        <div class="line-4"></div>
+                    </div>
+                </div>
+                <div class="body-panel_second-frame flex-container column__flex__container">
+                    <div class="mini-display"></div>
+                    <div class="mini-text flex-container column__flex__container">
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                        <div class="line-3"></div>
+                        <div class="line-4"></div>
+                    </div>
+                </div>
+                <div class="body-panel_third-frame flex-container column__flex__container">
+                    <div class="mini-display"></div>
+                    <div class="mini-text flex-container column__flex__container">
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                        <div class="line-3"></div>
+                        <div class="line-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="phone-home-button flex-container flex-center">
+        <div class="phone-home-button_button"></div>
+    </div>
+</div>
+
+<div class="block-phone-right-button-wrapper"></div>
+<div class="block-phone-top-button-wrapper"></div>
+
+<!--wire between phone and main monitor-->
+<div class="wire-phone-main-monitor-wrapper-1"></div>
+<div class="wire-phone-main-monitor-wrapper-2"></div>
+<div class="wire-phone-main-monitor-wrapper-3"></div>
+
+<div class="big-input-wire-1 input-wire-settings">
+    <div class="big"></div>
+    <div class="medium"></div>
+    <div class="small"></div>
+</div>
+<!--left main monitor wire input-->
+<div class="big-input-wire-2 input-wire-settings">
+    <div class="big"></div>
+    <div class="medium"></div>
+    <div class="small"></div>
+</div>
+<div class="big-input-wire-3 input-wire-settings">
+    <div class="big"></div>
+    <div class="medium"></div>
+    <div class="small"></div>
+</div>
+<!--phone down wire input-->
+<div class="big-input-wire-4 input-wire-settings">
+    <div class="big"></div>
+    <div class="medium"></div>
+</div>
+
+<!--video distributor wrapper-->
+<div class="video-distributor-wrapper row__flex__container">
+    <div class="display flex-container flex-center">
+        <div class="sun-circle"></div>
+        <div class="big-mountain"></div>
+        <div class="small-mountain"></div>
+    </div>
+</div>
+
+<!--wire video distributor and main monitor -->
+<div class="wire-video-main-monitor-wrapper"></div>
+
+<!--photo camera wrapper-->
+<div class="photo-camera-wrapper flex-container row__flex__container">
+    <div class="black-shutter"></div>
+    <div class="black-line"></div>
+</div>
+<div class="photo-camera-spark"></div>
+<div class="photo-camera-button"></div>
+<div class="photo-camera-glass-wrapper flex-container flex-center">
+    <div class="inner-glass flex-center flex-container">
+        <div class="inner-glass_central-circle"></div>
+    </div>
+</div>
+
+<!--input between video distributor and photo camera-->
+<div class="big-input-wire-5 input-wire-settings">
+    <div class="big"></div>
+    <div class="medium"></div>
+    <div class="small"></div>
+</div>
+<!--wire video distributor and photo camera -->
+<div class="wire-video-photo-camera-wrapper"></div>
+
+<!--coffee machine wrapper-->
+<div class="coffee-machine-wrapper flex-container column__flex__container">
+    <div class="coffee-machine_placement">
+        <div class="placement-line"></div>
+    </div>
+    <div class="coffee-machine-body flex-container flex-center row__flex__container">
+        <div class="body_left-panel flex-container column__flex__container">
+            <div class="warning-display flex-container flex-center">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                     width="48" height="48"
+                     viewBox="0 0 172 172"
+                     style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                       stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                       font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                       style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#F1C40F">
+                            <path d="M86,17.2c-4.76766,0 -8.85191,2.90522 -10.58203,7.04349l-62.22682,107.32084v0.0112c-1.12304,1.80909
+                            -1.72017,3.89516 -1.72448,6.02448c0,6.33287 5.1338,11.46667 11.46667,11.46667c0.26906,-0.00173 0.53798,-0.01294
+                             0.80625,-0.03359l0.0224,0.03359h62.23802h62.23802l0.02239,-0.04479c0.26814,0.02439 0.53706,0.03933 0.80625,0.04479c6.33287,
+                             0 11.46667,-5.1338 11.46667,-11.46667c-0.00223,-2.13313 -0.59944,-4.22335 -1.72448,-6.03567l-0.08958,-0.15677c-0.00373,
+                             -0.00373 -0.00746,-0.00747 -0.0112,-0.0112l-62.12604,-107.15287c-1.73013,-4.13827 -5.81437,-7.04349 -10.58203,
+                             -7.04349zM79.04609,65.12708h13.90782l-1.15339,37.10989h-11.60104zM86.02239,113.58047c4.7128,0 7.5362,2.53566
+                              7.5362,6.86432c0,4.2484 -2.8234,6.77474 -7.5362,6.77474c-4.7472,0 -7.59218,-2.52634 -7.59218,
+                              -6.77474c0,-4.32866 2.83925,-6.86432 7.59218,-6.86432z"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="keyboard-panel grid-container">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="accelerate-circle"></div>
+        </div>
+        <div class="body_main-display">
+            <div class="display_coffee">
+                <div class="coffee_cover"></div>
+                <div class="coffee_sub-cover"></div>
+                <div class="coffee_body"></div>
+                <div class="coffee_sticker"></div>
+                <div class="coffee_footer"></div>
+            </div>
+            <div class="display_placement-for-coffee">
+                <div class="placement"></div>
+            </div>
+            <div class="display_piston-for-coffee"></div>
+        </div>
+    </div>
+    <div class="coffee-machine_footer"></div>
+</div>
+<div class="coffee-machine-additional-wrapper"></div>
+
+
+<!-- web camera wrapper-->
+<div class="web-camera-wrapper flex-container flex-center">
+    <div class="left-line"></div>
+    <div class="camera-circle flex-center flex-container">
+        <div class="inner-glass flex-center flex-container">
+            <div class="inner-glass_central-circle"></div>
+        </div>
+    </div>
+    <div class="right-line"></div>
+</div>
+
+<!--connector placement-->
+<div class="placement-for-web-camera"></div>
+<div class="first-circle ellipse"></div>
+<div class="second-circle ellipse"></div>
+<div class="third-circle ellipse"></div>
+
+<!--connect block between main monitor and web camera-->
+<div class="connect-block-wrapper">
+
+</div>
+<script src="src/js/indexScript.js"></script>
+</body>
+</html>
